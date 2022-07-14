@@ -30,6 +30,13 @@ public class ActorController : ControllerBase
     }
 
     // POST action
+    [HttpPost]
+    public IActionResult Create(Actor actor)
+    {
+        // This code will save the pizza and return a result
+        ActorService.Add(actor);
+        return CreatedAtAction(nameof(Create), new { id = actor.id }, actor);
+    }
 
     // PUT action
 
