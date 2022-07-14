@@ -19,3 +19,8 @@ C:\Users\laura.white\source\repos\movies-api\obj\Debug\net6.0\refint\movies-api.
 C:\Users\laura.white\source\repos\movies-api\obj\Debug\net6.0\movies-api.pdb
 C:\Users\laura.white\source\repos\movies-api\obj\Debug\net6.0\movies-api.genruntimeconfig.cache
 C:\Users\laura.white\source\repos\movies-api\obj\Debug\net6.0\ref\movies-api.dll
+C:\Users\laura.white\source\repos\movies-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\laura.white\source\repos\movies-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\laura.white\source\repos\movies-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\laura.white\source\repos\movies-api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\laura.white\source\repos\movies-api\obj\Debug\net6.0\movies-api.csproj.CopyComplete
