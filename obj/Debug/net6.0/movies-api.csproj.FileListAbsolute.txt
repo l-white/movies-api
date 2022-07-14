@@ -24,3 +24,8 @@ C:\Users\laura.white\source\repos\movies-api\bin\Debug\net6.0\Microsoft.EntityFr
 C:\Users\laura.white\source\repos\movies-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\laura.white\source\repos\movies-api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\laura.white\source\repos\movies-api\obj\Debug\net6.0\movies-api.csproj.CopyComplete
+C:\Users\laura.white\source\repos\movies-api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\laura.white\source\repos\movies-api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\laura.white\source\repos\movies-api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\laura.white\source\repos\movies-api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\laura.white\source\repos\movies-api\obj\Debug\net6.0\movies-api.MvcApplicationPartsAssemblyInfo.cs
