@@ -33,12 +33,40 @@ public class ActorController : ControllerBase
     [HttpPost]
     public IActionResult Create(Actor actor)
     {
-        // This code will save the pizza and return a result
+        // Save the actor and return a result
         ActorService.Add(actor);
         return CreatedAtAction(nameof(Create), new { id = actor.id }, actor);
     }
 
     // PUT action
+    [HttpPut("{id}")]
+    public IActionResult Update(int id, Actor actor)
+    {
+        // Update the actor and return a result
+        if (id != actor.id)
+            return BadRequest();
+
+        var existingPizza = ActorService.Get(id);
+        if (existingPizza is null)
+            return NotFound();
+
+        ActorService.Update(actor);
+
+        return NoContent();
+    }
 
     // DELETE action
+    [HttpDelete("{id}")]
+    public IActionResult Delete(int id)
+    {
+        // Delete an actor and return a result
+        var actor = ActorService.Get(id);
+
+        if (actor is null)
+            return NotFound();
+
+        ActorService.Delete(id);
+
+        return NoContent();
+    }
 }
