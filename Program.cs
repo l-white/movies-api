@@ -7,7 +7,21 @@ namespace movies_api
     {
         public static void Main(string[] args)
         {
+            // add CORS
+            //var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://localhost:5228")
+                                        .AllowAnyHeader()
+                                        .AllowAnyMethod();
+                                  });
+            });
 
             // Add services to the container.
 
@@ -32,6 +46,8 @@ namespace movies_api
 
             app.UseAuthorization();
 
+            // add CORS
+            app.UseCors();
 
             app.MapControllers();
 
