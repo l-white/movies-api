@@ -35,8 +35,8 @@ namespace movies_api
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "ToDo API",
-                    Description = "An ASP.NET Core Web API for managing ToDo items",
+                    Title = "Movies API",
+                    Description = "An ASP.NET Core Web API for actors and movies",
                     TermsOfService = new Uri("https://example.com/terms"),
                     Contact = new OpenApiContact
                     {
