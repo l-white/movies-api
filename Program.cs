@@ -44,8 +44,8 @@ namespace movies_api {
                         }
                 });
             });
-            //builder.Services.AddDbContext<ActorContext>(opt => opt.UseInMemoryDatabase("ActorList"));
-            builder.Services.AddDbContext<ActorContext> (
+            //builder.Services.AddDbContext<APIContext>(opt => opt.UseInMemoryDatabase("ActorList"));
+            builder.Services.AddDbContext<APIContext> (
                 dbContextOptions => dbContextOptions
                 .UseSqlServer (connectionString)
                 .EnableSensitiveDataLogging () // <-- These two calls are optional but help

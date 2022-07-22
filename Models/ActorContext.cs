@@ -1,13 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
 
-namespace movies_api.Models
-{
-    public class ActorContext : DbContext
-    {
-        public ActorContext(DbContextOptions<ActorContext> options) : base(options)
-        {
-        }
+namespace movies_api.Models {
+    public class APIContext : DbContext {
+        public APIContext (DbContextOptions<APIContext> options) : base (options) { }
         public DbSet<Actor> Actors { get; set; } = null!;
+        public DbSet<Movie> Movies { get; set; } = null!;
+
     }
 }
